@@ -24,7 +24,7 @@ class Pages extends Component {
     render() {
         if (!this.state.pages) {
             return (
-                <div>Loading...</div>
+                <div className='container'>Loading...</div>
             )
         }
         return (
