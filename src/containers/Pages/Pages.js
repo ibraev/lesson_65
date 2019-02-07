@@ -16,8 +16,7 @@ class Pages extends Component {
     componentDidUpdate(prevProps) {
         if (this.props.match.params.name !== prevProps.match.params.name) {
             axios.get('pages/' + this.props.match.params.name + '.json').then(response => {
-                this.setState({pages: response.data})
-                ;
+                this.setState({pages: response.data});
             })
         }
     }
